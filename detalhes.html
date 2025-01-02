@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes de quartos</title>
+    <link rel="stylesheet" href="hotel.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <div class="nav_logo">Hotell</div>
+        <ul class="nav_links">
+            <li class="link"><a href="#">Home</a></li>
+            <li class="link"><a href="#">Book</a></li>
+            <li class="link"><a href="#">Blog</a></li>
+            <li class="link"><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="auth_buttons">
+            <button class="login"><i class="bx bx-log-in"></i> Login</button>
+            <button class="signup"><i class="bx bx-user-plus"></i> Sign Up</button>
+        </div>
+        <div class="user">
+            <img src="imagem/user1.jpg" alt="user">
+        </div>
+    </nav>
+    <hr>
+
+    <div class="hotel-info-container">
+        <div class="hotel-info-header">
+          <div class="hotel-rating">
+            <span class="stars">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+              </span>
+              
+            <span class="amenities-icons">
+              <i class='bx bx-swim'></i>
+              <i class='bx bx-transfer'></i>
+            </span>
+          </div>
+          <h2>Radisson Blu Hotel & Residence Maputo</h2>
+          <div class="hotel-address">
+            <i class='bx bx-map'></i>
+            <span>Avenida Marginal 141, 9999 Maputo, Moçambique</span>
+            <a href="#" class="location-link">Ótima localização - visualizar mapa</a>
+          </div>
+        </div>
+        <div class="hotel-info-actions">
+       
+          <button class="reserve-button">
+            Reservar agora <br><small>1 quarto por MZN 134.925</small>
+          </button>
+        </div>
+       
+      </div>
+
+
+      <div class="hotel-container">
+        <!-- Galeria de Imagens -->
+        <div class="image-gallery">
+          <div class="large-image-container">
+            <div class="large-image">
+              <img id="imagem-principal" src="imagem/quato1.jpg" alt="Imagem Principal">
+            </div>
+            <div class="horizontal-image">
+              <img class="thumb" src="imagem/quarto4.jpg" alt="Imagem Horizontal" onclick="alterarImagem(this)">
+              <img class="thumb" src="imagem/quarto3.jpg" alt="Imagem Horizontal" onclick="alterarImagem(this)">
+              <img class="thumb" src="imagem/quarto3.jpg" alt="Imagem Horizontal" onclick="alterarImagem(this)">
+            </div>
+          </div>
+          <div class="small-images">
+            <img class="thumb" src="imagem/quato2.jpg" alt="Imagem 1" onclick="alterarImagem(this)">
+            <img class="thumb" src="imagem/quato1.jpg" alt="Imagem 2" onclick="alterarImagem(this)">
+            <img class="thumb" src="imagem/quarto4.jpg" alt="Imagem 3" onclick="alterarImagem(this)">
+            <img class="thumb" src="imagem/quarto4.jpg" alt="Imagem 3" onclick="alterarImagem(this)">
+          </div>
+        </div>
+      
+        <!-- Comodidades -->
+        <div class="amenities">
+          <div><i class='bx bx-swim'></i> 2 piscinas</div>
+          <div><i class='bx bx-wifi'></i> Wi-Fi gratuito</div>
+          <div><i class='bx bx-bath'></i> Banheiro privativo</div>
+          <div><i class='bx bx-wind'></i> Ar-condicionado</div>
+          <div><i class='bx bx-wind'></i> Ar-condicionado</div>
+          <div><i class='bx bx-car'></i> Estacionamento grátis no local</div>
+      </div>
+      </div>
+      <div class="map">
+        <h3>Localização</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238133.68182342237!2d32.56318762363234!3d-25.953724896425453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee6b97be57cd345%3A0x9cbb8dc2b9920bcd!2sMaputo%2C%20Mo%C3%A7ambique!5e0!3m2!1spt-BR!2sbr!4v1680267801749!5m2!1spt-BR!2sbr" 
+            width="100%" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+    
+      <div id="modal" class="modal">
+        <span class="close-modal" onclick="fecharModal()">&times;</span>
+        <img id="imagem-modal">
+        <div class="modal-navigation">
+          <button class="nav-button" onclick="navegarImagem(-1)"><i class='bx bx-chevron-left nav-left'></i></button>
+          <button class="nav-button" onclick="navegarImagem(1)"><i class='bx bx-chevron-right nav-right'></i></button>
+        </div>
+      </div>
+
+      <script src="hotel.js"></script>
+</body>
+</html>
