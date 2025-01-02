@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Website</title>
+    <link rel="stylesheet" href="car2.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script type="text/JavaScript" src="car2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mixitup@3/dist/mixitup.min.js"></script>
+</head>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>C</span>ars.</a>
+
+        <nav class="navbarr">
+            <ul class="nav-list">
+           <li> <a href="#" class="active" >Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+        </nav>
+        <div class="social-media">
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+        </div>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h1>Car dealing Experience.</h1>
+            <h3>RedeFinde!</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod veniam quae tempore provident laborum quaerat deleniti. 
+            </p>
+            <a href="#" class="btnnn">Saber Mais.</a>
+        </div>
+        <div class="home-img">
+            <div class="rhombus"> 
+                <img src="imagem/mercedes-amg-g-63-7680x4320-19208-removebg.png" alt="">
+            </div>
+        </div>
+        <div class="rhombus2"></div>
+    </section>
+
+</section>
+    <section class="featured-car" id="featured-car">
+        
+
+        <div class="container">
+
+            <div class="title-araper">
+                <h2 class="h2 section-car">
+                    Catálogo de Carros.
+                    <div class="lista" style="  margin-left: 700px;">
+                        <!-- Botão para mostrar o filtro de preço -->
+                        <div class="year">
+                            <button class="year-btn" id="year">Preço <i class='bx bxs-chevron-down'></i></button>
+                            <ul class="year_bx" id="year_bx">
+                                <li>Min to max</li>
+                                <li>Max to min</li>
+                            </ul>
+                        </div>
+                
+                        <!-- Botão para mostrar o filtro de marcas -->
+                        <div class="letter">
+                            <button id="a_z">Marcas <i class='bx bxs-chevron-down'></i></button>
+                            <ul class="year_bx letter_bx" id="letter_bx">
+                                <li data-filter="all">All</li>
+                                <li data-filter=".mazda">Mazda</li>
+                                
+                                <li>Lexus</li>
+                                <li>Toyota</li>
+                                <li>Honda</li>
+                            </ul>
+                        </div>
+                    </div>
+                </h2>
+                <h3>Escolha seu carro ideal</h3>
+            </div>
+            <ul class="featured-car-list" class="featured-car-card hidden">
+                
+                <li>
+                <div class="featured-car-card mix mazda">
+                    <figure class="card-benner">
+                        <img src="imagem/img/b2.webp" alt="Rolls Royce 2024" loading="lazy" width="440" height="300" class="m-100">
+                    </figure>
+
+                    <div class="card-content">
+                        <div class="card-title-araper">
+                            <h3 class="h3 card-title">
+                                <a href="#">Rolls Royce 2024</a>
+                            </h3>
+                            <data value="2024" class="year">2024</data>
+                        </div>
+                        <ul class="card-list">
+                            <li class="card-list-item">
+                                <i class='bx bxs-group'></i>
+                            <span class="card-item-text">4 Pessoais</span>
+                            </li>
+
+                            <li class="card-list-item">
+                                <i class='bx bxs-car'></i>
+                            <span class="card-item-text">Automatic</span>
+                            </li>
+
+                        
+                        </ul>
+
+                        <div class="card-price-wrapper">
+                            <p class="card-price">
+                                <strong>MZN 2.800.000,00</strong> 
+                            </p>
+                        
+                            <button class="btn" onclick="openCarDetails(0)">Rent now</button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="featured-car-card mix mazda">
+                    <figure class="card-benner">
+                        <img src="imagem/img/t1.jpg" alt="Rolls Royce 2024" loading="lazy" width="440" height="300" class="m-100">
+                    </figure>
+
+                    <div class="card-content">
+                        <div class="card-title-araper">
+                            <h3 class="h3 card-title">
+                                <a href="#">Rolls Royce 2024</a>
+                            </h3>
+                            <data value="2024" class="year">2024</data>
+                        </div>
+                        <ul class="card-list">
+                            <li class="card-list-item">
+                                <i class='bx bxs-group'></i>
+                            <span class="card-item-text">4 Pessoais</span>
+                            </li>
+
+                            <li class="card-list-item">
+                                <i class='bx bxs-car'></i>
+                            <span class="card-item-text">Automatic</span>
+                            </li>
+                        </ul>
+
+                        <div class="card-price-wrapper">
+                            <p class="card-price">
+                                <strong>$13049</strong> / Dolar
+                            </p>
+
+                            <button class="btn" onclick="openCarDetails(1)">Rent now</button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="featured-car-card">
+                    <figure class="card-benner">
+                        <img src="imagem/img/bmw-1.jpeg" alt="Rolls Royce 2024" loading="lazy" width="440" height="300" class="m-100">
+                    </figure>
+
+                    <div class="card-content">
+                        <div class="card-title-araper">
+                            <h3 class="h3 card-title">
+                                <a href="#">Rolls Royce 2024</a>
+                            </h3>
+                            <data value="2024" class="year">2024</data>
+                        </div>
+                        <ul class="card-list">
+                            <li class="card-list-item">
+                                <i class='bx bxs-group'></i>
+                            <span class="card-item-text">4 Pessoais</span>
+                            </li>
+
+                            <li class="card-list-item">
+                                <i class='bx bxs-car'></i>
+                            <span class="card-item-text">Automatic</span>
+                            </li>
+
+                        
+                        </ul>
+
+                        <div class="card-price-wrapper">
+                            <p class="card-price">
+                                <strong>$13049</strong> / Dolar
+                            </p>
+
+                            <button class="btn" onclick="openCarDetails(2)">Rent now</button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="featured-car-card">
+                    <figure class="card-benner">
+                        <img src="imagem/img/hylix-1.jpg" alt="Rolls Royce 2024" loading="lazy" width="440" height="300" class="m-100">
+                    </figure>
+
+                    <div class="card-content">
+                        <div class="card-title-araper">
+                            <h3 class="h3 card-title">
+                                <a href="#">Rolls Royce 2024</a>
+                            </h3>
+                            <data value="2024" class="year">2024</data>
+                        </div>
+                        <ul class="card-list">
+                            <li class="card-list-item">
+                                <i class='bx bxs-group'></i>
+                            <span class="card-item-text">4 Pessoais</span>
+                            </li>
+
+                            <li class="card-list-item">
+                                <i class='bx bxs-car'></i>
+                            <span class="card-item-text">Automatic</span>
+                            </li>
+
+                        
+                        </ul>
+
+                        <div class="card-price-wrapper">
+                            <p class="card-price">
+                                <strong>$13049</strong> / Dolar
+                            </p>
+
+                        <button class="btn">Rent now</button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="featured-car-card">
+                    <figure class="card-benner">
+                        <img src="imagem/img/Land Cruiser -1.jpeg" alt="Rolls Royce 2024" loading="lazy" width="440" height="300" class="m-100">
+                    </figure>
+
+                    <div class="card-content">
+                        <div class="card-title-araper">
+                            <h3 class="h3 card-title">
+                                <a href="#">Rolls Royce 2024</a>
+                            </h3>
+                            <data value="2024" class="year">2024</data>
+                        </div>
+                        <ul class="card-list">
+                            <li class="card-list-item">
+                                <i class='bx bxs-group'></i>
+                            <span class="card-item-text">4 Pessoais</span>
+                            </li>
+
+                            <li class="card-list-item">
+                                <i class='bx bxs-car'></i>
+                            <span class="card-item-text">Automatic</span>
+                            </li>
+
+                        
+                        </ul>
+
+                        <div class="card-price-wrapper">
+                            <p class="card-price">
+                                <strong>$13049</strong> / Dolar
+                            </p>
+
+                        <button class="btn">Rent now</button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="featured-car-card">
+                    <figure class="card-benner">
+                        <img src="imagem/img/MAZDA-CX-3-2016-13-1.jpg" alt="Rolls Royce 2024" loading="lazy" width="440" height="300" class="m-100">
+                    </figure>
+
+                    <div class="card-content">
+                        <div class="card-title-araper">
+                            <h3 class="h3 card-title">
+                                <a href="#">Rolls Royce 2024</a>
+                            </h3>
+                            <data value="2024" class="year">2024</data>
+                        </div>
+                        <ul class="card-list">
+                            <li class="card-list-item">
+                                <i class='bx bxs-group'></i>
+                            <span class="card-item-text">4 Pessoais</span>
+                            </li>
+
+                            <li class="card-list-item">
+                                <i class='bx bxs-car'></i>
+                            <span class="card-item-text">Automatic</span>
+                            </li>
+
+                        
+                        </ul>
+
+                        <div class="card-price-wrapper">
+                            <p class="card-price">
+                                <strong>$13049</strong> / Dolar
+                            </p>
+
+                        <button class="btn">Rent now</button>
+                        </div>
+                    </div>
+                </div>
+            </li> 
+            <li>
+                <div class="featured-car-card">
+                    <figure class="card-benner">
+                        <img src="imagem/land-rover-1-removebg-preview.png" alt="Rolls Royce 2024" loading="lazy" width="440" height="300" class="m-100">
+                    </figure>
+
+                    <div class="card-content">
+                        <div class="card-title-araper">
+                            <h3 class="h3 card-title">
+                                <a href="#">Rolls Royce 2024</a>
+                            </h3>
+                            <data value="2024" class="year">2024</data>
+                        </div>
+                        <ul class="card-list">
+                            <li class="card-list-item">
+                                <i class='bx bxs-group'></i>
+                            <span class="card-item-text">4 Pessoais</span>
+                            </li>
+
+                            <li class="card-list-item">
+                                <i class='bx bxs-car'></i>
+                            <span class="card-item-text">Automatic</span>
+                            </li>
+
+                        
+                        </ul>
+
+                        <div class="card-price-wrapper">
+                            <p class="card-price">
+                                <strong>$13049</strong> / Dolar
+                            </p>
+
+                        <button class="btn">Rent now</button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="featured-car-card">
+                    <figure class="card-benner">
+                        <img src="imagem/brabus-d30-estate-mercedes-benz-c-class-black-cars-5k-3840x2160-8414.jpeg" alt="Rolls Royce 2024" loading="lazy" width="440" height="300" class="m-100">
+                    </figure>
+
+                    <div class="card-content">
+                        <div class="card-title-araper">
+                            <h3 class="h3 card-title">
+                                <a href="#">Rolls Royce 2024</a>
+                            </h3>
+                            <data value="2024" class="year">2024</data>
+                        </div>
+                        <ul class="card-list">
+                            <li class="card-list-item">
+                                <i class='bx bxs-group'></i>
+                            <span class="card-item-text">4 Pessoais</span>
+                            </li>
+
+                            <li class="card-list-item">
+                                <i class='bx bxs-car'></i>
+                            <span class="card-item-text">Automatic</span>
+                            </li>
+
+                        
+                        </ul>
+
+                        <div class="card-price-wrapper">
+                            <p class="card-price">
+                                <strong>$13049</strong> / Dolar
+                            </p>
+
+                        <button class="btn">Rent now</button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+      
+        
+        
+        </ul>
+        </div>
+        <div class="load-more-container">
+            <a href="#" id="loadMoreCarsButton" class="load-more-btn">
+                <span>Mais</span>
+                <i class='bx bx-right-arrow-alt'></i>
+            </a>
+        </div>
+    </section>
+
+    <section class="promocao">
+        <div class="h2-promo">
+            <h2>Carros em Promoção.</h2>
+        </div>
+        <div class="container">
+            <ul class="featured-car-list">
+                <div id="promo-cars-list">
+                <li>
+                    <div class="featured-car-card">
+                        <!-- Seção de promoção -->
+                        <figure class="card-benner">
+                        <div class="promo-tag">
+                            <img src="imagem/pro2-removebg-preview.png" alt="Promoção" class="promo-image">
+                            
+                        </div>
+                            <img src="imagem/rolls-royce-spectre-3840x2160-19849.jpg" alt="Rolls Royce 2024" loading="lazy" width="440" height="300" class="m-100"  class="zoom-image">
+                        </figure>
+                
+                        <div class="card-content">
+                            <div class="card-title-araper">
+                                <h3 class="h3 card-title">
+                                    <a href="#">Rolls Royce 2024</a>
+                                </h3>
+                                <data value="2024" class="year">2024</data>
+                            </div>
+                
+                            <ul class="card-list">
+                                <li class="card-list-item">
+                                    <i class='bx bxs-group'></i>
+                                    <span class="card-item-text">4 Pessoais</span>
+                                </li>
+                                
+                                <li class="card-list-item">
+                                    <i class='bx bxs-car'></i>
+                                    <span class="card-item-text">Automatic</span>
+                                </li>
+                            </ul>
+                            <div class="card-price-wrapper">
+                                <p class="card-price">
+                                    <strong class="price-old">MZN 15000</strong> <!-- Preço original -->
+                                    <strong>MZN 13049</strong> <!-- Preço com desconto -->
+                                </p>
+                                <button class="btn">Rent now</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="featured-car-card">
+                        <!-- Seção de promoção -->
+                        <figure class="card-benner">
+                        <div class="promo-tag">
+                            <img src="imagem/pro2-removebg-preview.png" alt="Promoção" class="promo-image">
+                            
+                        </div>
+                            <img src="imagem/rolls-royce-spectre-3840x2160-19849.jpg" alt="Rolls Royce 2024" loading="lazy" width="440" height="300" class="m-100"  class="zoom-image">
+                        </figure>
+                
+                        <div class="card-content">
+                            <div class="card-title-araper">
+                                <h3 class="h3 card-title">
+                                    <a href="#">Rolls Royce 2024</a>
+                                </h3>
+                                <data value="2024" class="year">2024</data>
+                            </div>
+                
+                            <ul class="card-list">
+                                <li class="card-list-item">
+                                    <i class='bx bxs-group'></i>
+                                    <span class="card-item-text">4 Pessoais</span>
+                                </li>
+                                
+                                <li class="card-list-item">
+                                    <i class='bx bxs-car'></i>
+                                    <span class="card-item-text">Automatic</span>
+                                </li>
+                            </ul>
+                            <div class="card-price-wrapper">
+                                <p class="card-price">
+                                    <strong class="price-old">MZN 15000</strong> <!-- Preço original -->
+                                    <strong>MZN 13049</strong> <!-- Preço com desconto -->
+                                </p>
+                                <button class="btn">Rent now</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="featured-car-card">
+                        <!-- Seção de promoção -->
+                        <figure class="card-benner">
+                        <div class="promo-tag">
+                            <img src="imagem/pro2-removebg-preview.png" alt="Promoção" class="promo-image">
+                            
+                        </div>
+                            <img src="imagem/rolls-royce-spectre-3840x2160-19849.jpg" alt="Rolls Royce 2024" loading="lazy" width="440" height="300" class="m-100"  class="zoom-image">
+                        </figure>
+                
+                        <div class="card-content">
+                            <div class="card-title-araper">
+                                <h3 class="h3 card-title">
+                                    <a href="#">Rolls Royce 2024</a>
+                                </h3>
+                                <data value="2024" class="year">2024</data>
+                            </div>
+                
+                            <ul class="card-list">
+                                <li class="card-list-item">
+                                    <i class='bx bxs-group'></i>
+                                    <span class="card-item-text">4 Pessoais</span>
+                                </li>
+                               
+                                <li class="card-list-item">
+                                    <i class='bx bxs-car'></i>
+                                    <span class="card-item-text">Automatic</span>
+                                </li>
+                            </ul>
+                            <div class="card-price-wrapper">
+                                <p class="card-price">
+                                    <strong class="price-old">MZN 15000</strong> <!-- Preço original -->
+                                    <strong>MZN 13049</strong> <!-- Preço com desconto -->
+                                </p>
+                                <button class="btn">Rent now</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="featured-car-card">
+                        <!-- Seção de promoção -->
+                        <figure class="card-benner">
+                        <div class="promo-tag">
+                            <img src="imagem/pro2-removebg-preview.png" alt="Promoção" class="promo-image">
+                            
+                        </div>
+                            <img src="imagem/rolls-royce-spectre-3840x2160-19849.jpg" alt="Rolls Royce 2024" loading="lazy" width="440" height="300" class="m-100"  class="zoom-image">
+                        </figure>
+                
+                        <div class="card-content">
+                            <div class="card-title-araper">
+                                <h3 class="h3 card-title">
+                                    <a href="#">Rolls Royce 2024</a>
+                                </h3>
+                                <data value="2024" class="year">2024</data>
+                            </div>
+                
+                            <ul class="card-list">
+                                <li class="card-list-item">
+                                    <i class='bx bxs-group'></i>
+                                    <span class="card-item-text">4 Pessoais</span>
+                                </li>
+                               
+                                <li class="card-list-item">
+                                    <i class='bx bxs-car'></i>
+                                    <span class="card-item-text">Automatic</span>
+                                </li>
+                            </ul>
+                            <div class="card-price-wrapper">
+                                <p class="card-price">
+                                    <strong class="price-old">MZN 15000</strong> <!-- Preço original -->
+                                    <strong>MZN 13049</strong> <!-- Preço com desconto -->
+                                </p>
+                                <button class="btn">Rent now</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="featured-car-card">
+                        <!-- Seção de promoção -->
+                        <figure class="card-benner">
+                        <div class="promo-tag">
+                            <img src="imagem/pro2-removebg-preview.png" alt="Promoção" class="promo-image">
+                            
+                        </div>
+                            <img src="imagem/rolls-royce-spectre-3840x2160-19849.jpg" alt="Rolls Royce 2024" loading="lazy" width="440" height="300" class="m-100"  class="zoom-image">
+                        </figure>
+                
+                        <div class="card-content">
+                            <div class="card-title-araper">
+                                <h3 class="h3 card-title">
+                                    <a href="#">Rolls Royce 2024</a>
+                                </h3>
+                                <data value="2024" class="year">2024</data>
+                            </div>
+                
+                            <ul class="card-list">
+                                <li class="card-list-item">
+                                    <i class='bx bxs-group'></i>
+                                    <span class="card-item-text">4 Pessoais</span>
+                                </li>
+                                
+                                <li class="card-list-item">
+                                    <i class='bx bxs-car'></i>
+                                    <span class="card-item-text">Automatic</span>
+                                </li>
+                            </ul>
+                            <div class="card-price-wrapper">
+                                <p class="card-price">
+                                    <strong class="price-old">MZN 15000</strong> <!-- Preço original -->
+                                    <strong>MZN 13049</strong> <!-- Preço com desconto -->
+                                </p>
+                                <button class="btn">Rent now</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="featured-car-card">
+                        <!-- Seção de promoção -->
+                        <figure class="card-benner">
+                        <div class="promo-tag">
+                            <img src="imagem/pro2-removebg-preview.png" alt="Promoção" class="promo-image">
+                            
+                        </div>
+                            <img src="imagem/rolls-royce-spectre-3840x2160-19849.jpg" alt="Rolls Royce 2024" loading="lazy" width="440" height="300" class="m-100"  class="zoom-image">
+                        </figure>
+                
+                        <div class="card-content">
+                            <div class="card-title-araper">
+                                <h3 class="h3 card-title">
+                                    <a href="#">Rolls Royce 2024</a>
+                                </h3>
+                                <data value="2024" class="year">2024</data>
+                            </div>
+                
+                            <ul class="card-list">
+                                <li class="card-list-item">
+                                    <i class='bx bxs-group'></i>
+                                    <span class="card-item-text">4 Pessoais</span>
+                                </li>
+                                
+                                <li class="card-list-item">
+                                    <i class='bx bxs-car'></i>
+                                    <span class="card-item-text">Automatic</span>
+                                </li>
+                            </ul>
+                            <div class="card-price-wrapper">
+                                <p class="card-price">
+                                    <strong class="price-old">MZN 15000</strong> <!-- Preço original -->
+                                    <strong>MZN 13049</strong> <!-- Preço com desconto -->
+                                </p>
+                                <button class="btn">Rent now</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="featured-car-card">
+                        <!-- Seção de promoção -->
+                        <figure class="card-benner">
+                        <div class="promo-tag">
+                            <img src="imagem/pro2-removebg-preview.png" alt="Promoção" class="promo-image">
+                            
+                        </div>
+                            <img src="imagem/rolls-royce-spectre-3840x2160-19849.jpg" alt="Rolls Royce 2024" loading="lazy" width="440" height="300" class="m-100"  class="zoom-image">
+                        </figure>
+                
+                        <div class="card-content">
+                            <div class="card-title-araper">
+                                <h3 class="h3 card-title">
+                                    <a href="#">Rolls Royce 2024</a>
+                                </h3>
+                                <data value="2024" class="year">2024</data>
+                            </div>
+                
+                            <ul class="card-list">
+                                <li class="card-list-item">
+                                    <i class='bx bxs-group'></i>
+                                    <span class="card-item-text">4 Pessoais</span>
+                                </li>
+                                
+                                <li class="card-list-item">
+                                    <i class='bx bxs-car'></i>
+                                    <span class="card-item-text">Automatic</span>
+                                </li>
+                            </ul>
+                            <div class="card-price-wrapper">
+                                <p class="card-price">
+                                    <strong class="price-old">MZN 15000</strong> <!-- Preço original -->
+                                    <strong>MZN 13049</strong> <!-- Preço com desconto -->
+                                </p>
+                                <button class="btn">Rent now</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="featured-car-card">
+                        <!-- Seção de promoção -->
+                        <figure class="card-benner">
+                        <div class="promo-tag">
+                            <img src="imagem/pro2-removebg-preview.png" alt="Promoção" class="promo-image">
+                            
+                        </div>
+                            <img src="imagem/rolls-royce-spectre-3840x2160-19849.jpg" alt="Rolls Royce 2024" loading="lazy" width="440" height="300" class="m-100"  class="zoom-image">
+                        </figure>
+                
+                        <div class="card-content">
+                            <div class="card-title-araper">
+                                <h3 class="h3 card-title">
+                                    <a href="#">Rolls Royce 2024</a>
+                                </h3>
+                                <data value="2024" class="year">2024</data>
+                            </div>
+                
+                            <ul class="card-list">
+                                <li class="card-list-item">
+                                    <i class='bx bxs-group'></i>
+                                    <span class="card-item-text">4 Pessoais</span>
+                                </li>
+                                
+                                <li class="card-list-item">
+                                    <i class='bx bxs-car'></i>
+                                    <span class="card-item-text">Automatic</span>
+                                </li>
+                            </ul>
+                            <div class="card-price-wrapper">
+                                <p class="card-price">
+                                    <strong class="price-old">MZN 15000</strong> <!-- Preço original -->
+                                    <strong>MZN 13049</strong> <!-- Preço com desconto -->
+                                </p>
+                                <button class="btn" onclick="openModal()">Rent now</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+            </div>   
+            </ul>
+        </div>
+        <div class="bt-container" >
+            <a href="#" id="loadPromoCarsBtn" class="bt" >
+                <span>Mais</span>
+                <i class='bx bx-right-arrow-alt'></i>
+            </a>
+        </div>
+    </section>
+    <section class="contato">
+        <div class="h22-promo">
+            <h2>Fale Conosco.</h2>
+        </div>
+    </section>
+    <section id="section-wrapper">
+        <div class="box-wrapper">
+
+            <!-- Informações -->
+            <div class="info-wrap">
+                <h2 class="info-title">Contacte-Nos</h2>
+                <h3 class="info-sub-title">Preencha o formulário com suas informações, e nossa equipe entrará em contato com você o mais breve possível.</h3>
+
+                <ul class="info-details">
+                    <li>
+                        <i class="fa fa-phone"></i>
+                        <span>Telefone:</span> <a href="tel:+85376736">9498389333</a>
+                    </li>
+                    <li >
+                        <i class="fa fa-envelope"></i>
+                        <span>Email:</span> <a href="mailto:este@gmail.com">estevao.com</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-globe"></i>
+                        <span>Website:</span> <a href="http://ieuiucmk.mz">Cars.com</a>
+                    </li>
+                </ul>
+
+                <ul class="social">
+                    <li><i class="fa fa-instagram"></i></li>
+                    <li><i class="fa fa-facebook"></i></li>
+                    <li><i class="fa fa-whatsapp" ></i></li>
+                </ul>
+            </div>
+
+            <!-- Formulário -->
+            <div class="form-wrap">
+                <form action="#" method="post">
+                    <h2 class="form-title">Envie sua Mensagem</h2>
+
+                    <div class="form-fields">
+                        <div class="form-grup">
+                            <input type="text" name="nome" placeholder="Seu nome">
+                        </div>
+                        <div class="form-grup ">
+                            <input type="text" name="numero" placeholder="Seu número">
+                        </div>
+                        <div class="form-grup-1" >
+                            <input type="email" name="email" placeholder="Seu email">
+                        </div>
+                        <div class="form-grup">
+                            <textarea name="mensagem" placeholder="Escreva sua mensagem aqui"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-container">
+                        <input type="submit" value="Enviar" class="enviar">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <section class="footer-1">
+        <footer class="footer">
+            <div class="conteudo">
+              <div class="row">
+                <div class="footer-col">
+                  <h4>
+                    Company
+                  </h4>
+                  <ul>
+                    <li><a href="#">sobre-nos </a></li>
+                    <li><a href="#">nossos seevicos</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>
+                    Obter ajuda
+                  </h4>
+                  <ul>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>
+                    Lojas-online
+                  </h4>
+                  <ul>
+                    <li><a href="#">carros</a></li>
+                    <li><a href="#">motos</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>
+                    Siga-nos
+                  </h4>
+                  <div class="social-links">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram" ></i></a>
+                    <a href="a" ><i class="fa fa-twitter" ></i></a>
+                    <a href="a" ><i class='bx bxl-linkedin'></i></a>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </footer>
+    </section>
+
+    <div class="modal" id="car-modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-container">
+                <div class="modal-left">
+                    <div class="carousel">
+                        <img src="imagem/rolls-royce-spectre-3840x2160-19849.jpg" alt="Carro 1" class="carousel-image active">
+                        <img src="imagem/mercedes-amg-g-63-7680x4320-19208-removebg.png" alt="Carro 2" class="carousel-image">
+                        <img src="imagem/porsche-taycan-gts-3840x2160-19906.jpg" alt="Carro 3" class="carousel-image">
+                    </div>
+                </div>
+                <div class="modal-right">
+                    <h2>Detalhes do Veículo</h2>
+                    <table class="car-table">
+                        <thead>
+                            <tr>
+                                <th>Propriedade</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Localização</td><td>Yokohama - Japão</td></tr>
+                            <tr><td>Ano</td><td>2024</td></tr>
+                            <tr><td>Transmissão</td><td>Automático</td></tr>
+                            <tr><td>Cor</td><td>Preto</td></tr>
+                        </tbody>
+                    </table>
+                    <div class="modal-buttons">
+                        <button class="buy-btn" onclick="showPurchaseModal()">Comprar</button>
+                        <button class="reserve-btn" onclick="openReserveModal()">Reservar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        function openModal() {
+            document.getElementById('car-modal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('car-modal').style.display = 'none';
+        }
+
+        function showPurchaseModal() {
+            document.getElementById('purchase-modal').style.display = 'flex';
+            closeModal();
+        }
+
+        function closePurchaseModal() {
+            document.getElementById('purchase-modal').style.display = 'none';
+        }
+
+        function openReserveModal() {
+            document.getElementById('reserve-modal').style.display = 'flex';
+            closeModal();
+        }
+
+        function closeReserveModal() {
+            document.getElementById('reserve-modal').style.display = 'none';
+        }
+
+        window.onload = function() {
+            // Ocultar todos os modais com uma classe comum (opcional)
+            const modais = document.querySelectorAll('.modal');
+            modais.forEach(modal => {
+                modal.style.display = 'none';
+            });
+
+            // Ou ocultar modais específicos pelo ID
+            document.getElementById('reserve-modal').style.display = 'none';
+            document.getElementById('purchase-modal').style.display = 'none';
+        };
+
+        function closePurchaseModal() {
+  document.getElementById('purchase-modal').style.display = 'none';
+  document.getElementById('car-modal').style.display = 'flex'; // Mostra o modal anterior
+}
+function closeReserveModal() {
+  document.getElementById('reserve-modal').style.display = 'none';
+  document.getElementById('car-modal').style.display = 'flex'; // Mostra o modal anterior
+}
+    </script>
+    
+  <script>
+document.getElementById("loadPromoCarsBtn").addEventListener("click", function (event) {
+    event.preventDefault(); // Impede o comportamento padrão do link
+
+    // Dados das imagens adicionais
+    const newCars = [
+        {
+            image: "imagem/rolls-royce-spectre-3840x2160-19849.jpg",
+            title: "Tesla Model S",
+            year: "2023",
+            passengers: "5 Pessoais",
+            transmission: "Automático",
+            oldPrice: "MZN 17000",
+            newPrice: "MZN 15000"
+        },
+        {
+            image: "imagem/rolls-royce-spectre-3840x2160-19849.jpg",
+            title: "BMW i8",
+            year: "2022",
+            passengers: "4 Pessoais",
+            transmission: "Automático",
+            oldPrice: "MZN 20000",
+            newPrice: "MZN 18000"
+        },
+        {
+            image: "imagem/rolls-royce-spectre-3840x2160-19849.jpg",
+            title: "BMW i8",
+            year: "2022",
+            passengers: "4 Pessoais",
+            transmission: "Automático",
+            oldPrice: "MZN 20000",
+            newPrice: "MZN 18000"
+        },
+        {
+            image: "imagem/rolls-royce-spectre-3840x2160-19849.jpg",
+            title: "BMW i8",
+            year: "2022",
+            passengers: "4 Pessoais",
+            transmission: "Automático",
+            oldPrice: "MZN 20000",
+            newPrice: "MZN 18000"
+        },
+    ];
+
+    // Referência à lista
+    const promoCarsList = document.getElementById("promo-cars-list");
+
+    // Adicionar novos itens à lista
+    newCars.forEach(car => {
+        const listItem = document.createElement("li");
+        listItem.innerHTML = `
+            <div class="featured-car-card">
+                <figure class="card-benner">
+                    <img src="${car.image}" alt="${car.title}" loading="lazy" width="440" height="300" class="m-100 zoom-image">
+                </figure>
+                <div class="card-content">
+                    <div class="card-title-araper">
+                        <h3 class="h3 card-title">
+                            <a href="#">${car.title}</a>
+                        </h3>
+                        <data value="${car.year}" class="year">${car.year}</data>
+                    </div>
+                    <ul class="card-list">
+                        <li class="card-list-item">
+                            <i class='bx bxs-group'></i>
+                            <span class="card-item-text">${car.passengers}</span>
+                        </li>
+                        <li class="card-list-item">
+                            <i class='bx bxs-car'></i>
+                            <span class="card-item-text">${car.transmission}</span>
+                        </li>
+                    </ul>
+                    <div class="card-price-wrapper">
+                        <p class="card-price">
+                            <strong class="price-old">${car.oldPrice}</strong>
+                            <strong>${car.newPrice}</strong>
+                        </p>
+                        <button class="btn" onclick="openModal()">Rent now</button>
+                    </div>
+                </div>
+            </div>
+        `;
+        promoCarsList.appendChild(listItem);
+    });
+});
+
+
+
+  </script>
+  <script>
+  
+
+
+
+
+
+
+const loadMoreBtn = document.getElementById('loadNormalCarsBtn');
+const carList = document.querySelector('.featured-car-list');
+const hiddenCars = document.querySelectorAll('.featured-car-card.hidden');
+
+let carsToShow = 6; // Initial number of cars to show
+
+loadMoreBtn.addEventListener('click', () => {
+    carsToShow += 6; // Increase the number of cars to show
+
+    hiddenCars.forEach((car, index) => {
+        if (index < carsToShow) {
+            car.classList.remove('hidden');
+        }
+    });
+
+    // Hide the "Load More" button if all cars are shown
+    if (carsToShow >= hiddenCars.length) {
+        loadMoreBtn.style.display = 'none';
+    }
+});
+
+
+  </script>
+  <script>
+    function handlePaymentMethodChange() {
+    // Obtém o valor do método de pagamento selecionado
+    const paymentMethod = document.getElementById("payment-method").value;
+
+    // Remove a classe 'active' de todas as seções
+    document.querySelectorAll(".payment-section1").forEach(section => {
+        section.style.display = "none"; // Oculta todos os detalhes
+    });
+
+    // Mostra a seção correspondente ao método de pagamento selecionado
+    if (paymentMethod === "credit-card" || paymentMethod === "debit-card") {
+        document.getElementById("card-details").style.display = "block";
+    } else if (paymentMethod === "bank-transfer") {
+        document.getElementById("bank-details").style.display = "block";
+    } else if (paymentMethod === "pix") {
+        document.getElementById("pix-details").style.display = "block";
+    }
+}
+  </script>
+<script>
+    // Função que adiciona mais carros à lista
+    function loadMoreCars() {
+        const carList = document.querySelector('.featured-car-list');  // Seleciona a lista de carros
+        const carItems = [
+            {
+                image: "imagem/porsche-taycan-gts-3840x2160-19906.jpg",
+                title: "Rolls Royce 2024",
+                year: "2024",
+                seats: "4 Pessoais",
+                transmission: "Automatic",
+                price: "MZN 2.800.000,00"
+            },
+            {
+                image: "imagem/rolls-royce-spectre-3840x2160-19849.jpg",
+                title: "Rolls Royce 2024",
+                year: "2024",
+                seats: "4 Pessoais",
+                transmission: "Automatic",
+                price: "$13049 / Dolar"
+            },
+            {
+                image: "imagem/rolls-royce-spectre-3840x2160-19849.jpg",
+                title: "Rolls Royce 2024",
+                year: "2024",
+                seats: "4 Pessoais",
+                transmission: "Automatic",
+                price: "$13049 / Dolar"
+            },
+            {
+                image: "imagem/rolls-royce-spectre-3840x2160-19849.jpg",
+                title: "Rolls Royce 2024",
+                year: "2024",
+                seats: "4 Pessoais",
+                transmission: "Automatic",
+                price: "$13049 / Dolar"
+            },
+            // Adicione mais carros aqui conforme necessário
+        ];
+    
+        // Loop para adicionar cada carro
+        carItems.forEach(car => {
+            const li = document.createElement('li');  // Cria um novo item <li>
+            li.innerHTML = `
+                <div class="featured-car-card">
+                    <figure class="card-benner">
+                        <img src="${car.image}" alt="${car.title}" loading="lazy" width="440" height="300" class="m-100">
+                    </figure>
+                    <div class="card-content">
+                        <div class="card-title-araper">
+                            <h3 class="h3 card-title">
+                                <a href="#">${car.title}</a>
+                            </h3>
+                            <data value="${car.year}" class="year">${car.year}</data>
+                        </div>
+                        <ul class="card-list">
+                            <li class="card-list-item">
+                                <i class='bx bxs-group'></i>
+                                <span class="card-item-text">${car.seats}</span>
+                            </li>
+                            <li class="card-list-item">
+                                <i class='bx bxs-car'></i>
+                                <span class="card-item-text">${car.transmission}</span>
+                            </li>
+                        </ul>
+                        <div class="card-price-wrapper">
+                            <p class="card-price">
+                                <strong>${car.price}</strong>
+                            </p>
+                            <button class="btn">Rent now</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+            carList.appendChild(li);  // Adiciona o novo item à lista
+        });
+    }
+    
+    // Adiciona o evento de clique no botão "Mais"
+    document.getElementById('loadMoreCarsButton').addEventListener('click', function(e) {
+        e.preventDefault();  // Previne o comportamento padrão do link
+        loadMoreCars();  // Chama a função que adiciona mais carros
+    });
+    </script>
+    <script>
+        const cars = [
+       {
+           image: [
+           "imagem/mercedes-amg-g-63-7680x4320-19208-removebg.png",
+           "imagem/rolls-royce-spectre-3840x2160-19849.jpg",
+           "imagem/porsche-taycan-gts-3840x2160-19906.jpg"
+       ],
+           price: "300.000,00",
+           name: "Toyota Corolla 2023",
+           color: "Prata",
+           engine: "2.0L",
+           transmission: "Automática",
+           fuel: "Flex",
+           warranty: "5 anos"
+       },
+       {
+           image: [
+           "imagem/mercedes-amg-g-63-7680x4320-19208-removebg.png",
+           "imagem/rolls-royce-spectre-3840x2160-19849.jpg",
+           "imagem/porsche-taycan-gts-3840x2160-19906.jpg"
+       ],
+           price: "200.000,00",
+           name: "Tesla Model S",
+           color: "Preto",
+           engine: "Elétrico",
+           transmission: "Automática",
+           fuel: "Elétrico",
+           warranty: "8 anos"
+       },
+       {
+           image: [
+           "imagem/mercedes-amg-g-63-7680x4320-19208-removebg.png",
+           "imagem/rolls-royce-spectre-3840x2160-19849.jpg",
+          
+       ],
+           price: "100.000,00",
+           name: "Porshe",
+           color: "Preto",
+           engine: "Elétrico",
+           transmission: "Automática",
+           fuel: "Elétrico",
+           warranty: "8 anos"
+       }
+   ];
+
+
+   
+
+   // Função para salvar os dados do carro e redirecionar para a página de detalhes
+   function openCarDetails(index) {
+       localStorage.setItem("selectedCar", JSON.stringify(cars[index])); // Salva o carro no localStorage
+       window.location.href = "CAR.html"; // Redireciona para a página de detalhes
+   }
+   </script>
+</body>
+</html>
